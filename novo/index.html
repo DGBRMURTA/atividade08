@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Sigmar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <fieldset id="tabela">
+        <div class="titulo">
+                <h1>Cadastro de funcionários</h1>
+        </div>
+        <div class="geral">
+            <div class="cendc">
+                <p>CPF: <input type="text" name="cpf" id="cpf" class="elemento"></p>
+                <p>Nome: <input type="text" name="nome" id="nome" class="elemento"></p>
+                <p>Data de Nascimento: <input type="date" name="nascimento" id="nascimento" class="elemento"></p>
+                <p>Endereço: <input type="text" name="endereco" id="endereco" class="elemento"></p>
+                <p>Cidade:   <input type="text" name="cidade" id="cidade" class="elemento"></p>
+            </div>
+            <div class="tebs">
+                <p>Telefone: <input type="text" name="telefone" id="telefone" class="elemento"></p>
+                <p>Sexo: <input type="radio" name="sexo" id="sexo" class="e2lemento">M <input type="radio" name="sexo" id="sexo" class="e2lemento"> F</p>
+                <p>Bairro: <input type="text" name="bairro" id="bairro" class="elemento"></p>
+                <p>Estado: <select name="estado" id="estado" class="elementoestado">
+                    <option value="Selecione o Estado">Selecione o Estado</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                    <option value="PR">PR</option>
+                </select></p>
+            </div>
+        </div>
+        <button id="reseta" class="resetado" value="resetar" onclick="resetar()"><img src="18297.png" alt="imagem lixeira" class="imagem"></button>
+        <button id="lista"  class="listado" value="lista" onclick="listar()"><img src="2285516.png" alt="imagem lista" class="imagem"></button>
+        <div id="listador"> </div>
+    </fieldset>
+    <script src="javascript.js">
+
+    </script>
+</body>
+</html>
